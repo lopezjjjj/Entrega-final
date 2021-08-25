@@ -1,0 +1,582 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*Display del body*/
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 16px;
+  background-color: #DCDCDC; 
+  grid-gap: 1.25em;
+  
+}
+header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+main{
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+}
+footer{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+/*Estilo del Header*/
+header h1 {
+  color: #FF7C00;
+  font-size: 4em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-align: left;
+  padding-top: 1.25rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+}
+
+header nav {
+  font-size: 16px;
+  background-color: black;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+header nav ul li {
+  font-size: 1em;
+  border: solid #000000;
+  color: #DCDCDC;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/*Estilo sección Index/Home Y Empresa*/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+ section h2 {
+  color: #FF8303;
+  font-size: 2.5em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 3.12rem;
+  
+}
+
+section p {
+  margin-top: 4rem;
+  margin-right: 4rem;
+  color: #000000;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  text-align: left;
+}
+
+section img {
+  width: 600px;
+  height: 400px;
+  margin-top: 30px;
+}
+/*Estilo sección nuestrostrabajos*/
+.main_trabajos h2 {
+  color: #FF8303;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 3.12rem;
+  margin-left: 3rem;
+}
+
+.main_trabajos .galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 30px;
+  grid-gap: 10px;
+}
+
+.main_trabajos .galeria img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid #ffa704;
+}
+
+.main_trabajos .galeria .galeria__item:nth-child(6) {
+  -ms-grid-column: span 2;
+  grid-column-start: span 2;
+}
+
+.main_trabajos .galeria .galeria__item:nth-child(4) {
+  -ms-grid-row: span 2;
+  grid-row-start: span 2;
+}
+/*Estilo sección productos*/
+.main_productos h2 {
+  color: #FF8303;
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 2px;
+  margin-top: 3.12rem;
+  margin-left: 3rem;
+}
+
+.main_productos p {
+  margin-top: 2.25rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.main_productos .tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.main_productos .tarjetas .card {
+  border: 1px solid #FF7C00;
+  margin: 10px;
+  padding-top: 20px;
+}
+
+.main_productos .tarjetas .card img {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.main_productos .tarjetas .card h5 {
+  color: #fd7f00;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.main_productos .tarjetas .card p {
+  letter-spacing: 1px;
+}
+
+/*Estilo sección contacto*/
+.main_contacto form {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.main_contacto form fieldset {
+  background-color: #bbbbbb;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+.main_contacto form fieldset legend {
+  font-size: 2.5rem;
+}
+
+.main_contacto form fieldset label {
+  display: block;
+  font-size: 18px;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.main_contacto form fieldset textarea {
+  width: 18,75rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  margin-bottom: 0.62rem;
+}
+
+.main_contacto form fieldset .boton {
+  margin-left: 1.25rem;
+}
+/*Estilo página de Tienda (Error)*/
+.error {
+  background-color: #c0c0c0;
+}
+
+.error h1 {
+  color: #ee5151;
+  margin-top: 40px;
+  margin-left: 30px;
+}
+
+.error main p {
+  color: #050505;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.error main ul li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.error main ul li a {
+  color: #ee5151;
+}
+/*Estilo del footer*/
+footer {
+  height: 12.5rem;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  padding: 2rem 1.25rem 1.25rem 4.37rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DCDCDC), to(#b8b3b3));
+  background-image: linear-gradient(#DCDCDC, #b8b3b3);
+}
+
+footer h3 {
+  color: #ff8000;
+  font-size: 2.1rem;
+  font-weight: normal;
+}
+
+footer p {
+  margin-top: 1.2rem;
+}
+
+footer h4 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fd7f00;
+  margin-top: 1.2rem;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+footer i {
+  color: #000000;
+  text-decoration: none;
+}
+/*Transformaciones*/
+nav ul li {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+.boton:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+
+input {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+input:focus {
+  background-color: #f3b173;
+}
+
+textarea {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+textarea:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.instagram:hover {
+  color: #852c85;
+}
+
+.whatsapp:hover {
+  color: #3cb83c;
+}
+
+.mail:hover {
+  color: #fc4a4a;
+}
+@media screen and (max-width:1200px){
+  .main_trabajos .galeria .galeria__item{
+    grid-column-start: span 2;
+      
+  } 
+  .main_trabajos .galeria .galeria__item:nth-child(3){
+    grid-column-start: span 4;
+      
+  } 
+    
+}
+
+@media screen and (max-width:768px){
+  
+/*Responsive header*/
+  header{
+    text-align: center;
+  }
+  header h1{
+     margin: 20px;
+  }
+  header nav ul li {
+    font-size: 10px;
+  }
+  /*Responsive Home & Empresa*/
+   section h2{
+        
+    font-size: 2rem;
+  
+  }
+    section img{
+    height: 200px;
+    width: 400px;
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+     section p{
+    letter-spacing: 0px;
+    font-size: 18px;
+    margin-left: 70px;
+      
+  }
+  /*Responsive nuetros trabajos*/
+  .main_trabajos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  /*Responsive productos*/
+  .main_productos .tarjetas {
+    margin: 20px;
+    
+  }
+  
+  .main_productos .tarjetas .card {
+    padding: 10px auto;
+    margin-bottom: 20px;
+    
+  }
+  
+  .main_productos .tarjetas .card img {
+    padding: 20px;
+  }
+  
+  .main_productos .tarjetas .card h5 {
+    font-size: 18px;
+    
+  }
+  
+  .main_productos .tarjetas .card p {
+    letter-spacing: normal;
+    font-size: 18px;
+    margin: 10px;
+  }
+  /*Reponsive*/
+  /*Responsive footer*/
+  footer h3{
+    font-size: 1.9rem;
+      
+  }
+  footer p{
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  footer h4{
+    font-size: 1.6rem;
+    margin-top: 10px;
+      
+  }
+  footer li{
+    margin-top: 10px;
+  }
+
+}
+@media screen and (max-width:500px){
+  /*Responsive header*/
+  header{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  header h1{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: normal;
+    margin: 20px;
+  }
+  header nav ul{
+    display:block;
+    background-color: #DCDCDC;
+   
+    
+  }
+  header nav ul li{
+    border: none;
+    margin-bottom: 5px;
+  }
+  header nav ul li a{
+    color: #000000;
+  }
+  /*Responsive Home & Empresa*/
+  section h2{  
+  font-size: 2rem;
+
+}
+  section img{
+  height: 200px;
+  width: 60%;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+  section p{
+  letter-spacing: normal;
+  margin-left: 70px;
+    
+}
+  /*Responsive Nuestros Trabajos*/
+  .main_trabajos .galeria{
+    display: flex;
+    flex-wrap: wrap; 
+
+  }
+  /*Responsive productos*/
+  .main_productos h2 {
+    font-size: 20px;
+  
+    
+  }
+  
+  .main_productos p {
+    font-size: 16px;
+  }
+  
+  .main_productos .tarjetas {
+    margin: 20px;
+    
+  }
+  
+  .main_productos .tarjetas .card {
+    padding: 10px auto;
+    margin-bottom: 20px;
+    
+  }
+  
+  
+  .main_productos .tarjetas .card h5 {
+    font-size: 14px;
+    
+  }
+  
+  .main_productos .tarjetas .card p {
+    letter-spacing: normal;
+    font-size: 14px;
+    margin: 10px;
+  }
+  /*Responsive Contacto*/
+  .main_contacto form {
+    font-size: 18px;
+    font-weight: normal; 
+    margin-top: 10px;
+  }
+  
+  .main_contacto form fieldset {
+    background-color: #bbbbbb;
+    padding: 20px ;  
+  }
+  
+  .main_contacto form fieldset legend {
+    font-size: 25px;
+  }
+  
+  .main_contacto form fieldset label {
+    display: block;
+    font-size: 14px;
+    margin-left: 10px;
+    
+  }
+  
+  .main_contacto form fieldset textarea {
+    width: 18,75rem;
+    margin-bottom: 0.62rem;
+  }
+  
+  /*Responsive footer*/
+  footer{
+    padding: 20px;
+  }
+  footer h3{
+    font-size: 1em;
+  }
+  footer p{
+    font-size: 0.8em;
+  }
+  footer h4{
+    font-size: 0.9em;
+
+  }
+
+}

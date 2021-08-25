@@ -1,0 +1,27 @@
+.error{
+    background-color: #c0c0c0;
+    h1{
+        color: #ee5151;
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+    main{
+        p{
+            color: rgb(5, 5, 5);
+            margin-left: 30px;
+            font-size: 20px;
+
+        }
+        ul{
+            li{
+                list-style-type: none;
+                margin-left: 30px;
+                a{
+                    color: rgb(238, 81, 81);
+
+                }
+            }
+        }
+    }
+
+}
